@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi Solver</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <header>
+            <h1>TOWER OF HANOI</h1>
+            <p>Automatic Puzzle Solver</p>
+            <p class="subtitle">
+                Let the computer solve the puzzle for you!
+            </p>
+        </header>
+
+        
+        <section class="settings">
+
+            <label for="diskCount">Number of Rings:</label>
+
+            <select id="diskCount">
+                <option value="3">3 Rings</option>
+                <option value="4">4 Rings</option>
+                <option value="5" selected>5 Rings</option>
+                <option value="6">6 Rings</option>
+                <option value="7">7 Rings</option>
+            </select>
+
+        </section>
+
+        
+        <section class="game-board">
+
+            
+            <div class="tower-area">
+                <div class="tower" id="left">
+                    <div class="pole"></div>
+                    <div class="disks"></div>
+                </div>
+                <h2>TOWER A</h2>
+            </div>
+
+            
+            <div class="tower-area">
+                <div class="tower" id="middle">
+                    <div class="pole"></div>
+                    <div class="disks"></div>
+                </div>
+                <h2>TOWER B</h2>
+            </div>
+
+            
+            <div class="tower-area">
+                <div class="tower" id="right">
+                    <div class="pole"></div>
+                    <div class="disks"></div>
+                </div>
+                <h2>TOWER C</h2>
+            </div>
+
+        </section>
+
+        
+        <section class="controls">
+
+            <button id="solveBtn">
+                ▶ AUTO SOLVE
+            </button>
+
+            <button id="resetBtn">
+                ↻ RESET
+            </button>
+
+        </section>
+
+        
+        <section class="information">
+
+            <div class="info-box">
+                <h3>Moves</h3>
+                <p id="moveCount">0</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Minimum Moves</h3>
+                <p id="minimumMoves">31</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Status</h3>
+                <p id="gameStatus">Ready</p>
+            </div>
+
+        </section>
+
+        
+        <section class="sound-control">
+            <label>
+                <input type="checkbox" id="soundToggle" checked>
+                Enable Ring Sound
+            </label>
+        </section>
+
+        
+        <footer>
+            <p>Logical Programming Project</p>
+            <p>Tower of Hanoi using Prolog</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
